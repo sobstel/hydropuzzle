@@ -1,0 +1,71 @@
+{
+  "name": "hydropuzzle",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "log": "react-native log-ios | grep -v nw_connection_get_connected_socket_block_invoke",
+    "optimize-images": "node bin/optimize-images.js",
+    "script2txt": "babel-node bin/script2txt.js",
+    "postinstall": "node ./android-release-gradle-fix.js"
+},
+  "dependencies": {
+    "color": "^1.0.3",
+    "install": "^0.10.1",
+    "js-yaml": "^3.10.0",
+    "npm": "^5.3.0",
+    "react": "^16.3.0-alpha.1",
+    "react-native": "0.54.2",
+    "react-native-animatable": "^1.1.1",
+    "react-native-extended-stylesheet": "^0.4.0",
+    "react-native-iphone-x-helper": "^1.0.1",
+    "react-native-keep-awake": "^3.0.1",
+    "react-native-progress": "^3.2.1",
+    "react-native-store-review": "^0.1.3",
+    "react-native-typewriter": "^0.5.3",
+    "react-native-video": "^2.0.0",
+    "react-timeout": "^1.0.1",
+    "shuffle-array": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-react-native": "1.9.1",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-jsx": "^4.0.2",
+    "eslint-plugin-html": "^3.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "imagemagick": "^0.1.3",
+    "jest": "^21.2.1",
+    "jest-enzyme": "^4.0.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.3.0",
+    "react-native-mock": "github:RealOrangeOne/react-native-mock#master",
+    "react-test-renderer": "^16.3.0-alpha.1",
+    "standard": "^10.0.2"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
+    "preset": "react-native",
+    "timers": "fake",
+    "setupFiles": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "verbose": true,
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts"
+    ]
+  }
+}

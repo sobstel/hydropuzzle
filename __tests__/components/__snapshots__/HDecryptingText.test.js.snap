@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HDecryptingText renders correctly 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  cancelAnimationFrame={[Function]}
+  clearImmediate={[Function]}
+  clearInterval={[Function]}
+  clearTimeout={[Function]}
+  completed={false}
+  ellipsizeMode="tail"
+  onEnd={[Function]}
+  requestAnimationFrame={[Function]}
+  setImmediate={[Function]}
+  setInterval={[Function]}
+  setTimeout={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "color": "black",
+        "fontSize": 17.05,
+        "fontWeight": "400",
+      },
+      Object {
+        "fontFamily": "Courier",
+        "lineHeight": 23.25,
+      },
+      Object {},
+    ]
+  }
+  text="Encrypted text!"
+  type="mono"
+>
+  Encrypted text!
+</Text>
+`;
