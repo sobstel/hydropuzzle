@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { View } from 'react-native';
+import { Platform, View } from 'react-native';
 import PropTypes from 'prop-types';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import { _ } from '@app/script';
@@ -41,6 +41,7 @@ class WifiPassword extends PureComponent {
           expectedValue={puzzle.password}
           onSuccess={this.onSuccess}
           clearTextOnFocus
+          autoFocus={Platform.select({ ios: true, android: null })}
           secureTextEntry
           containerStyle={styles.inputContainer}
           editable={!this.props.completed}

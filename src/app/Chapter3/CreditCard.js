@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { View } from 'react-native';
+import { Platform, View } from 'react-native';
 import PropTypes from 'prop-types';
 import ReactTimeout from 'react-timeout';
 import EStyleSheet from 'react-native-extended-stylesheet';
@@ -59,6 +59,7 @@ class CreditCard extends PureComponent {
             </HText>
             <HTextInput
               expectedValue={puzzle.cvvCode}
+              autoFocus={Platform.select({ ios: true, android: null })}
               selectTextOnFocus
               keyboardType='numeric'
               containerStyle={styles.cvvValueContainer}

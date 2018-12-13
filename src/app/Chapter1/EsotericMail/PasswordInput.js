@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { Platform } from 'react-native';
 import PropTypes from 'prop-types';
 import * as Animatable from 'react-native-animatable';
 import EStyleSheet from 'react-native-extended-stylesheet';
@@ -32,6 +33,7 @@ class PasswordInput extends PureComponent {
 
         <HTextInput
           expectedValue={this.props.password}
+          autoFocus={Platform.select({ ios: true, android: null })}
           onBlur={this.props.onBlur}
           onSuccess={this.props.onSuccess}
           clearTextOnFocus
