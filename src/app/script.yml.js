@@ -56,7 +56,7 @@ chapter1.companyChat.messages:
 chapter1.mail.body:
   - You don't know who I am. But I know who you are.
   - I mean I know who you really are.
-  - People think you're a geek. Addicted to Internet and your smartphone.
+  - People think you're a geek. Addicted to the internet and your smartphone.
   - But they have no idea that this is just iMan's secret identity.
   - How do I know this? It doesn't matter. Whole city is mysteriously running out of water and only you and your superpowers can help!
   - Please click on attachment. The password is %{PASSWORD}.
