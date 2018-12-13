@@ -1,6 +1,6 @@
 import { AsyncStorage } from 'react-native';
 
-const NAMESPACE = '1@HYDROPUZZLE_2_0:';
+const NAMESPACE = '@HYDROPUZZLE_2_1:';
 
 export const saveGame = (name, value) => {
   AsyncStorage.setItem(`${NAMESPACE}${name}`, JSON.stringify(value));
