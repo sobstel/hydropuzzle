@@ -14,13 +14,16 @@ Want to buy me a pint of :beer:? Download on
   </a>
 </p>
 
+## Preview
+
+![Hydropuzzle](https://raw.githubusercontent.com/hydropuzzle/hydropuzzle/master/Hydropuzzle.jpg)
+
 ## Development
 
-* `npm start -- --reset-cache`
+* `yarn start --reset-cache`
 * `react-native run-ios`
-* `npm test`
-* `npm optimize-images`
-* `react-native-git-upgrade`
+* `yarn test`
+* `yarn optimize-images`
 
 ## Resources
 
