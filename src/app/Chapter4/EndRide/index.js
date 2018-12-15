@@ -76,7 +76,7 @@ const styles = EStyleSheet.create({
   dotCover: {
     width: '100%',
     height: '2rem',
-    resizeMode: Image.resizeMode.cover,
+    resizeMode: 'cover',
     zIndex: 2
   }
 });

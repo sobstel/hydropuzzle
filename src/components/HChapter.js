@@ -181,7 +181,7 @@ const styles = EStyleSheet.create({
   bg: {
     position: 'absolute',
     left: 0,
-    resizeMode: Image.resizeMode.cover
+    resizeMode: 'cover'
   },
   scrollView: {
   }
