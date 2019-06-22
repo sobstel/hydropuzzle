@@ -35,41 +35,30 @@ class Credits extends PureComponent {
             <HButton appearance='dark' name='chapterUp' onPress={this.props.onPrevChapter} />
             <HText type='mono'>back</HText>
           </View>
-        </View>
-
-        <View style={styles.buttonsContainer}>
+          <View style={styles.buttonContainer}>
+            <HButton appearance='dark' name='backInTime' onPress={this.restart} />
+            <HText type='mono'>restart</HText>
+          </View>
           {Platform.OS === 'ios' &&
             <View style={styles.buttonContainer}>
               <HButton appearance='dark' name='star' onPress={this.rate} />
               <HText type='mono'>rate</HText>
             </View>
           }
-
-          <View style={styles.buttonContainer}>
-            <HButton appearance='dark' name='share' onPress={this.share} />
-            <HText type='mono'>share</HText>
-          </View>
-
-          <View style={styles.buttonContainer}>
-            <HButton appearance='dark' name='backInTime' onPress={this.restart} />
-            <HText type='mono'>restart</HText>
-          </View>
         </View>
 
         <View style={styles.buttonsContainer}>
           <View style={styles.buttonContainer}>
+            <HButton appearance='dark' name='share' onPress={this.share} />
+            <HText type='mono'>share</HText>
+          </View>
+          <View style={styles.buttonContainer}>
             <HButton appearance='dark' name='volt' onPress={this.volt} />
             <HText type='mono'>volt</HText>
           </View>
-
           <View style={styles.buttonContainer}>
-            <HButton appearance='dark' name='twitter' onPress={this.twitter} />
-            <HText type='mono'>twitter</HText>
-          </View>
-
-          <View style={styles.buttonContainer}>
-            <HButton appearance='dark' name='instagram' onPress={this.instagram} />
-            <HText type='mono'>insta</HText>
+            <HButton appearance='dark' name='author' onPress={this.author} />
+            <HText type='mono'>author</HText>
           </View>
         </View>
 
@@ -90,18 +79,9 @@ class Credits extends PureComponent {
 
   rate = () => Linking.openURL('https://itunes.apple.com/app/id1294812505?mt=8&ls=1');
   restart = () => this.restart();
-  share = () => Share.share({message: 'Hydropuzzle. Can you solve the mystery? https://www.hydropuzzle.com'});
+  share = () => Share.share({message: 'Hydropuzzle. Can you solve the mystery? https://www.sobstel.org/hydropuzzle/'});
   volt = () => Linking.openURL('http://www.sobstel.org/voltpuzzle/');
-  twitter = () => this.openURL('twitter://user?screen_name=sobstel', 'https://twitter.com/sobstel');
-  instagram = () => this.openURL('instagram://user?username=sobsteldev', 'https://www.instagram.com/sobsteldev/');
-
-  openURL = (url, fallbackUrl) => {
-    if (Linking.canOpenURL(url)) {
-      Linking.openURL(url).catch(() => Linking.openURL(fallbackUrl));
-    } else {
-      Linking.openURL(fallbackUrl);
-    }
-  }
+  author = () => Linking.openURL('http://www.sobstel.org/');
 
   restart = () => {
     Alert.alert(

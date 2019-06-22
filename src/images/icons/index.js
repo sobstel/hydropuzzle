@@ -51,6 +51,5 @@ export default {
   credits: require('./layout7_128.png'),
   share: require('./share3_128.png'),
   volt: require('./flash2_128.png'),
-  twitter: require('./twitter_128.png'),
-  instagram: require('./instagram_128.png'),
+  author: require('./user1_128.png')
 };

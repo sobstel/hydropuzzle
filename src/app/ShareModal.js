@@ -53,7 +53,7 @@ class ShareModal extends PureComponent {
 
   show = () => this.setState({visible: true});
   hide = () => this.setState({visible: false});
-  share = () => Share.share({message: 'Hydropuzzle. Can you solve the mystery? https://www.hydropuzzle.com'}).then(this.hide);
+  share = () => Share.share({message: 'Hydropuzzle. Can you solve the mystery? https://www.sobstel.org/hydropuzzle/'}).then(this.hide);
 }
 
 export default ShareModal;
