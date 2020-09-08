@@ -11,6 +11,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		25EC0371250833DE009A0518 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EC0370250833DE009A0518 /* Dummy.swift */; };
 		89BD105902274D0BB77627D4 /* CantedComicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A65B0DF0C243477F94D926EE /* CantedComicBold.ttf */; };
 		89D22206A0DF43E1826B62C4 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C94F2AD19754FA1A07FF98A /* FontAwesome.otf */; };
 		B6D172F4148C49FE94BFDC86 /* Fibre Vintage.otf in Resources */ = {isa = PBXBuildFile; fileRef = 17DED33C0C3B429195AAB376 /* Fibre Vintage.otf */; };
@@ -26,6 +27,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = hydropuzzle/main.m; sourceTree = "<group>"; };
 		17DED33C0C3B429195AAB376 /* Fibre Vintage.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Fibre Vintage.otf"; path = "../assets/fonts/Fibre Vintage.otf"; sourceTree = "<group>"; };
 		250C9293250815C700D74227 /* hydropuzzle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hydropuzzle-Bridging-Header.h"; sourceTree = "<group>"; };
+		25EC0370250833DE009A0518 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		2B9E9E4AB5C02F309C14CA6B /* Pods-hydropuzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hydropuzzle.debug.xcconfig"; path = "Target Support Files/Pods-hydropuzzle/Pods-hydropuzzle.debug.xcconfig"; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		462C68213CE946269E51DA8E /* Pods-hydropuzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hydropuzzle.release.xcconfig"; path = "Target Support Files/Pods-hydropuzzle/Pods-hydropuzzle.release.xcconfig"; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				250C9293250815C700D74227 /* hydropuzzle-Bridging-Header.h */,
+				25EC0370250833DE009A0518 /* Dummy.swift */,
 			);
 			name = hydropuzzle;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				25EC0371250833DE009A0518 /* Dummy.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +279,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = L2LWRR83T5;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -333,6 +337,7 @@
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -392,6 +397,7 @@
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
