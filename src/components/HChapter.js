@@ -3,7 +3,6 @@ import { Image, KeyboardAvoidingView, LayoutAnimation, Platform, ScrollView, Vie
 import PropTypes from 'prop-types';
 import ReactTimeout from 'react-timeout';
 import EStyleSheet from 'react-native-extended-stylesheet';
-import resolveAssetSource from 'resolveAssetSource';
 import { rwidth, rheight } from '@lib/rsize';
 
 import HTitleBanner from '@components/HTitleBanner';
@@ -94,7 +93,7 @@ class HChapter extends PureComponent {
   }
 
   renderBackgroundImage (containerHeight) {
-    const { width, height } = resolveAssetSource(images.bg);
+    const { width, height } = Image.resolveAssetSource(images.bg);
 
     const bgWidth = rwidth(100);
     const bgHeight = rwidth(100) / (width / height);

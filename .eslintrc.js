@@ -1,4 +1,7 @@
-{
+module.excports = {
+  // "root": true,
+  // "extends": '@react-native-community',
+
   "parser": "babel-eslint",
   "extends": ["standard", "standard-jsx"],
 

@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Image, View, ViewPropTypes } from 'react-native';
 import PropTypes from 'prop-types';
-import resolveAssetSource from 'resolveAssetSource';
 
 class HImage extends PureComponent {
   static propTypes = {
@@ -35,7 +34,7 @@ class HImage extends PureComponent {
 
   onContainerLayout = (event) => {
     const containerWidth = event.nativeEvent.layout.width;
-    const { width, height } = resolveAssetSource(this.props.source);
+    const { width, height } = Image.resolveAssetSource(this.props.source);
 
     this.setState({
       width: containerWidth,

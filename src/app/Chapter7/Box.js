@@ -1,8 +1,7 @@
 import React, { PureComponent } from 'react';
-import { View } from 'react-native';
+import { Image, View } from 'react-native';
 import PropTypes from 'prop-types';
 import EStyleSheet from 'react-native-extended-stylesheet';
-import resolveAssetSource from 'resolveAssetSource';
 import { rwidth } from '@lib/rsize';
 
 import HButton from '@components/HButton';
@@ -35,7 +34,7 @@ class Box extends PureComponent {
   }
 
   render () {
-    const { width: bgWidth, height: bgHeight } = resolveAssetSource(chapter7Images.box);
+    const { width: bgWidth, height: bgHeight } = Image.resolveAssetSource(chapter7Images.box);
     const height = rwidth(100) * (bgHeight / bgWidth);
 
     return (

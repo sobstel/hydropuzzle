@@ -1,7 +1,7 @@
 import yaml from 'js-yaml';
-import scriptYml from './script.yml';
+import scriptYaml from './scriptYaml';
 
-export const script = yaml.safeLoad(scriptYml);
+export const script = yaml.safeLoad(scriptYaml);
 
 export function _ (id, opts = {}) {
   if (script[id]) {

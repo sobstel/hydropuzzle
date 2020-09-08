@@ -1,4 +1,4 @@
-import Dimensions from 'Dimensions';
+import { Dimensions } from 'react-native';
 
 /**
  * @param {Number}  Scale 0 <= x <= 100

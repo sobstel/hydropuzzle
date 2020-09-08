@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import KeepAwake from 'react-native-keep-awake';
+// import KeepAwake from 'react-native-keep-awake';
 import { loadGame, saveGame } from '@lib/storage';
 
 import HContainer from '@components/HContainer';
@@ -40,7 +40,7 @@ class App extends PureComponent {
 
         {this.renderChapter()}
 
-        <KeepAwake />
+        {/* <KeepAwake /> */}
       </HContainer>
     );
   }

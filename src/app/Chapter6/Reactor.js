@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
-import { View } from 'react-native';
+import { Image, View } from 'react-native';
 import PropTypes from 'prop-types';
-import resolveAssetSource from 'resolveAssetSource';
 import * as Animatable from 'react-native-animatable';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import ReactTimeout from 'react-timeout';
@@ -105,7 +104,7 @@ class Reactor extends PureComponent {
 
   renderEffect (name) {
     const effectImage = chapter6Images[this.effectNames[name]];
-    const { width, height } = resolveAssetSource(effectImage);
+    const { width, height } = Image.resolveAssetSource(effectImage);
 
     const effectStyles = [
       styles.effect,

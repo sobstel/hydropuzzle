@@ -1,6 +1,5 @@
-import { Platform } from 'react-native';
+import { Dimensions, Platform } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
-import Dimensions from 'Dimensions';
 
 const { width } = Dimensions.get('window');
 
