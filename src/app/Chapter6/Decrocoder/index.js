@@ -236,7 +236,7 @@ export default ReactTimeout(Decrocoder);
 const styles = EStyleSheet.create({
   $consoleColor: '#972',
   container: {
-    width: '100%',
+    width: rwidth(100),
     backgroundColor: '#333',
     alignItems: 'center'
   },
@@ -258,7 +258,7 @@ const styles = EStyleSheet.create({
     paddingVertical: '1rem',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    width: '96%'
+    width: rwidth(96)
   },
   command: {
     width: '1rem',
@@ -298,7 +298,7 @@ const styles = EStyleSheet.create({
   },
   console: {
     backgroundColor: '#111',
-    width: '100%',
+    width: rwidth(100),
     paddingVertical: '0.5rem',
     paddingHorizontal: '0.5rem'
   },

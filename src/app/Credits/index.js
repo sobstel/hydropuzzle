@@ -3,6 +3,7 @@ import { Alert, Linking, Platform, Share, View } from 'react-native';
 import PropTypes from 'prop-types';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import * as Animatable from 'react-native-animatable';
+import { rwidth } from '@lib/rsize';
 import { _ } from '@app/script';
 
 import HButton from '@components/HButton';
@@ -130,12 +131,12 @@ const styles = EStyleSheet.create({
     marginBottom: '1rem'
   },
   buttonContainer: {
-    width: '23%',
+    width: rwidth(23),
     alignItems: 'center',
     justifyContent: 'center'
   },
   creditContainer: {
-    width: '100%',
+    width: rwidth(100),
     paddingHorizontal: '1rem',
     paddingVertical: '1rem',
     backgroundColor: '#fff4',

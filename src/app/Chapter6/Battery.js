@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import ReactTimeout from 'react-timeout';
 import * as Animatable from 'react-native-animatable';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { rwidth } from '@lib/rsize';
 import { _ } from '@app/script';
 
 import HIcon from '@components/HIcon';
@@ -75,21 +76,21 @@ const styles = EStyleSheet.create({
     width: '100%'
   },
   name: {
-    width: '63%',
+    width: rwidth(63),
     fontWeight: '$batteryBold',
     fontSize: '1.2rem'
   },
   energy: {
-    width: '15%',
+    width: rwidth(15),
     fontWeight: '$batteryBold',
     textAlign: 'right',
     paddingRight: '0.5rem',
     fontSize: '1.2rem'
   },
   iconContainer: {
-    width: '12%'
+    width: rwidth(12),
   },
   icon: {
-    width: '12%'
+    width: rwidth(12)
   }
 });

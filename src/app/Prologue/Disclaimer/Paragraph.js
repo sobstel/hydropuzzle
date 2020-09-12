@@ -3,6 +3,7 @@ import { LayoutAnimation, Platform, Text, View } from 'react-native';
 import PropTypes from 'prop-types';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import TypeWriter from 'react-native-typewriter';
+import { rwidth, rheight } from '@lib/rsize';
 
 import config from '@src/config';
 
@@ -63,8 +64,8 @@ export default Paragraph;
 const styles = EStyleSheet.create({
   container: {
     backgroundColor: 'transparent',
-    marginHorizontal: '7%',
-    marginVertical: '2.5%'
+    marginHorizontal: rwidth(7),
+    marginVertical: rheight(2.5)
   },
   text: {
     fontFamily: '$comicHeaderFont',

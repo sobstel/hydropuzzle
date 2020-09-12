@@ -5,6 +5,7 @@ import ReactTimeout from 'react-timeout';
 import * as Animatable from 'react-native-animatable';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import TypingIndicator from './TypingIndicator';
+import { rwidth } from '@lib/rsize';
 
 import HAvatar from '@components/HAvatar';
 import HImage from '@components/HImage';
@@ -157,10 +158,11 @@ export default ReactTimeout(HChat);
 
 const styles = EStyleSheet.create({
   container: {
+    width: rwidth(100),
     backgroundColor: '#fff9'
   },
   titleContainer: {
-    width: '100%',
+    // width: rwidth(100),
     backgroundColor: '#fffa',
     paddingVertical: '0.75rem'
   },

@@ -3,6 +3,7 @@ import { View } from 'react-native';
 import PropTypes from 'prop-types';
 import ReactTimeout from 'react-timeout';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { rheight } from '@lib/rsize';
 import { _ } from '@app/script';
 
 import Paragraph from './Paragraph';
@@ -64,9 +65,9 @@ export default ReactTimeout(Disclaimer);
 
 const styles = EStyleSheet.create({
   container: {
-    paddingTop: '10%',
-    paddingBottom: '8%',
-    minHeight: '12%',
+    paddingTop: rheight(10),
+    paddingBottom: rheight(8),
+    minHeight: rheight(12),
     flexGrow: 1
   }
 });

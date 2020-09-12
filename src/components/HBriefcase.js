@@ -4,6 +4,7 @@ import { View } from 'react-native';
 import ReactTimeout from 'react-timeout';
 import * as Animatable from 'react-native-animatable';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { rwidth } from '@lib/rsize';
 
 import HDecryptingText from './HDecryptingText';
 import HTrigger from './HTrigger';
@@ -104,7 +105,7 @@ export default ReactTimeout(HBriefcase);
 
 const styles = EStyleSheet.create({
   container: {
-    width: '100%',
+    width: rwidth(100),
     backgroundColor: '#fff9',
     paddingVertical: '0.5rem',
     // don't use "rem" for borders, otherwise weird background appears

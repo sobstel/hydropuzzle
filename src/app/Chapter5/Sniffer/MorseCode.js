@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react';
 import { View } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
-
+import { rwidth } from '@lib/rsize';
 import HText from '@components/HText';
+
 
 import MorseLetter from './MorseLetter';
 
@@ -30,7 +31,7 @@ export default MorseCode;
 const styles = EStyleSheet.create({
   container: {
     marginTop: '1.6rem',
-    width: '88%',
+    width: rwidth(88),
     flexDirection: 'row',
     justifyContent: 'space-around'
   },

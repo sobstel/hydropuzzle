@@ -29,7 +29,7 @@ class FilmReel extends PureComponent {
 
   filmReel = puzzle.filmReel();
 
-  componentWillReceiveProps (nextProps) {
+  UNSAFE_componentWillReceiveProps (nextProps) {
     if (this.props.index !== nextProps.index) {
       this.setState({index: nextProps.index});
     }

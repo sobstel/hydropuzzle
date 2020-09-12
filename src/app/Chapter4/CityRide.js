@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import ReactTimeout from 'react-timeout';
 import * as Animatable from 'react-native-animatable';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { rwidth } from '@lib/rsize';
 
 import HImage from '@components/HImage';
 import HText from '@components/HText';
@@ -126,7 +127,8 @@ export default ReactTimeout(CityRide);
 
 const styles = EStyleSheet.create({
   container: {
-    marginTop: '1rem'
+    marginTop: '1rem',
+    width: rwidth(100)
   },
   header: {
     flexDirection: 'row',

@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Text, View } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { rwidth } from '@lib/rsize';
 
 class HContainer extends PureComponent {
   render () {
@@ -26,7 +27,7 @@ const styles = EStyleSheet.create({
     position: 'absolute',
     top: 0,
     left: 0,
-    width: '100%',
+    width: rwidth(100),
     paddingVertical: 7,
     backgroundColor: '#c006'
   },

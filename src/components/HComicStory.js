@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import ReactTimeout from 'react-timeout';
 import * as Animatable from 'react-native-animatable';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { rwidth } from '@lib/rsize';
 
 import HComicHeader from '@components/HComicHeader';
 import HImage from '@components/HImage';
@@ -50,10 +51,10 @@ class HComicStory extends PureComponent {
     const progressDuration = this.props.timeout - animationDuration;
 
     return (
-      <View>
+      <View style={styles.container}>
         {this.props.headerText && <HComicHeader text={this.props.headerText} />}
 
-        <View style={styles.frames}>
+        <View style={styles.framesContainer}>
           {this.state.frames.map((frame, i) => {
             return (
               <Animatable.View
@@ -96,11 +97,14 @@ class HComicStory extends PureComponent {
 export default ReactTimeout(HComicStory);
 
 const styles = EStyleSheet.create({
-  frames: {
+  container: {
+    width: rwidth(100),
+  },
+  framesContainer: {
     marginTop: '1.5rem'
   },
   frame: {
-    width: '100%',
+    width: rwidth(100),
     marginBottom: '1rem'
   }
 });

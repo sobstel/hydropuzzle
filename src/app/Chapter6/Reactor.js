@@ -148,7 +148,7 @@ export default ReactTimeout(Reactor);
 const styles = EStyleSheet.create({
   container: {
     marginVertical: '2rem',
-    width: '100%',
+    width: rwidth(100),
     backgroundColor: '#fff9',
     paddingTop: '2rem',
     paddingBottom: '1rem',
@@ -173,6 +173,6 @@ const styles = EStyleSheet.create({
   },
   effect: {
     position: 'absolute',
-    width: '98%'
+    width: rwidth(98)
   }
 });

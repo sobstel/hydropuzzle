@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { View } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { rwidth } from '@lib/rsize';
 import { _ } from '@app/script';
 
 import HText from '@components/HText';
@@ -125,7 +126,7 @@ const styles = EStyleSheet.create({
     borderColor: '#ccc3'
   },
   numbersContainer: {
-    width: '75%',
+    width: rwidth(75),
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-around',

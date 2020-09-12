@@ -38,7 +38,7 @@ class Box extends PureComponent {
     const height = rwidth(100) * (bgHeight / bgWidth);
 
     return (
-      <View>
+      <View style={styles.container}>
         <HImage source={chapter7Images.box} containerStyle={styles.bg} />
 
         <View style={[styles.innerContainer, {height: height}]}>
@@ -145,6 +145,9 @@ const styles = EStyleSheet.create({
     top: 0,
     left: 0,
     width: rwidth(100)
+  },
+  container: {
+    width: rwidth(100),
   },
   innerContainer: {
     flexDirection: 'row',

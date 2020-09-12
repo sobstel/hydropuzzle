@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Text, ViewPropTypes } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { rwidth } from '@lib/rsize';
 
 export default class HComicHeader extends PureComponent {
   static propTypes = {
@@ -34,7 +35,7 @@ const styles = EStyleSheet.create({
     borderTopWidth: 1,
     borderBottomWidth: 1,
     borderColor: '#6660',
-    width: '100%'
+    width: rwidth(100),
   },
   text: {
     fontFamily: '$comicHeaderFont',
