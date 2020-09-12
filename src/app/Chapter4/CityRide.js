@@ -35,11 +35,8 @@ class CityRide extends PureComponent {
   interval = null;
   rideTime = config['chapter4.cityRide.time'];
 
-  componentWillMount () {
-    this.updateExpectedArrival();
-  }
-
   componentDidMount () {
+    this.updateExpectedArrival();
     this.props.setInterval(() => this.updateExpectedArrival(), 15000); // every 15 secs
   }
 

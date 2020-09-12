@@ -4,7 +4,7 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 const { width } = Dimensions.get('window');
 
 EStyleSheet.build({
-  rem: width < 375 ? 14 : (width < 414 ? 15 : (width < 768 ? 15.5 : 22)),
+  $rem: width < 375 ? 14 : (width < 414 ? 15 : (width < 768 ? 15.5 : 22)),
 
   // fonts
   $titleFont: 'Fibre Vintage',
@@ -18,5 +18,5 @@ EStyleSheet.build({
   $appleRed: '#FF3824',
 
   // debug
-  outline: 0
+  $outline: 0
 });

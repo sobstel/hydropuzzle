@@ -25,7 +25,7 @@ class HTrigger extends PureComponent {
     disabled: this.props.disabled
   }
 
-  componentWillReceiveProps (nextProps) {
+  UNSAFE_componentWillReceiveProps (nextProps) {
     // if prop changed and differs from state
     if (nextProps.disabled !== this.props.disabled && nextProps.disabled !== this.state.disabled) {
       this.setState({disabled: nextProps.disabled});

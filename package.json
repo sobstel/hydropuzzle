@@ -15,6 +15,7 @@
     "color": "^1.0.3",
     "install": "^0.10.1",
     "js-yaml": "^3.10.0",
+    "lodash.memoize": "^4.1.2",
     "npm": "^5.3.0",
     "react": "16.13.1",
     "react-native": "0.63.2",

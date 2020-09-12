@@ -3,10 +3,6 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-# All these libraries below have been removed from the Xcode project file and now live in the Podfile.
-# Cocoapods handles the linking now.
-# Here you can add more libraries with native modules.
-
 target 'hydropuzzle' do
   config = use_native_modules!
 

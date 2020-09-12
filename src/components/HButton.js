@@ -1,3 +1,4 @@
+import memoize from 'lodash.memoize';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { LayoutAnimation, TouchableOpacity, View, ViewPropTypes } from 'react-native';
@@ -149,7 +150,7 @@ class HButton extends PureComponent {
 
 export default ReactTimeout(HButton);
 
-const getStyles = EStyleSheet.memoize(function (scale) {
+const getStyles = memoize(function (scale = 1) {
   return EStyleSheet.create({
     $size: `${scale} * 5.5rem`,
     $borderSize: '$size - 20',

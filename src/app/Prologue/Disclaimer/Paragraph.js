@@ -18,7 +18,7 @@ class Paragraph extends PureComponent {
   minDelay = config['prologue.paragraph.minDelay'];
   maxDelay = config['prologue.paragraph.maxDelay'];
 
-  componentWillMount () {
+  UNSAFE_componentWillMount () {
     LayoutAnimation.spring();
   }
 
