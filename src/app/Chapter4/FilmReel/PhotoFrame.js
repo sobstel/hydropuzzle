@@ -76,7 +76,7 @@ const styles = EStyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around',
-    width: '100%',
+    width: rwidth(100),
     height: '3.75rem'
   },
   topBar: {

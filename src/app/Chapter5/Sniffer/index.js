@@ -48,7 +48,7 @@ export default Sniffer;
 
 const styles = EStyleSheet.create({
   container: {
-    width: '100%',
+    width: rwidth(100),
     paddingVertical: '2rem',
     backgroundColor: '#fff9',
     alignItems: 'center',
@@ -58,7 +58,7 @@ const styles = EStyleSheet.create({
     marginBottom: '1.5rem'
   },
   progressContainer: {
-    width: '100%',
+    width: rwidth(100),
     paddingVertical: '1rem',
     backgroundColor: '#c962',
     alignItems: 'center',

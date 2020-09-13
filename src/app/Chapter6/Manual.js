@@ -70,7 +70,7 @@ const styles = EStyleSheet.create({
   container: {
     marginTop: '2rem',
     marginBottom: '2rem',
-    width: '100%',
+    width: rwidth(100),
     backgroundColor: '#fff9',
     paddingVertical: '1.5rem'
   },

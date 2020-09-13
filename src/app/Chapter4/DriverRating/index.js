@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { View } from 'react-native';
 import PropTypes from 'prop-types';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { rwidth } from '@lib/rsize';
 import { _ } from '@app/script';
 
 import HText from '@components/HText';
@@ -86,7 +87,7 @@ export default DriverRating;
 
 const styles = EStyleSheet.create({
   container: {
-    width: '100%',
+    width: rwidth(100),
     backgroundColor: '#fff9',
     marginTop: '3rem',
     marginBottom: '0.5rem',

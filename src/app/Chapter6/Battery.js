@@ -73,7 +73,7 @@ const styles = EStyleSheet.create({
     paddingRight: '1rem',
     paddingVertical: '1rem',
     backgroundColor: '#fff9',
-    width: '100%'
+    width: rwidth(100)
   },
   name: {
     width: rwidth(63),

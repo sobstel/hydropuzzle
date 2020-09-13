@@ -169,6 +169,6 @@ const styles = EStyleSheet.create({
     fontSize: '1.25rem'
   },
   mapContainerStyles: {
-    width: '100%'
+    width: rwidth(100),
   }
 });

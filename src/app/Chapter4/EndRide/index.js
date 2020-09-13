@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { Image, View } from 'react-native';
 import PropTypes from 'prop-types';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { rwidth } from '@lib/rsize';
 
 import HImage from '@components/HImage';
 import MovingDot from '../MovingDot';
@@ -71,10 +72,10 @@ export default EndRide;
 
 const styles = EStyleSheet.create({
   container: {
-    width: '100%'
+    width: rwidth(100)
   },
   dotCover: {
-    width: '100%',
+    width: rwidth(100),
     height: '2rem',
     resizeMode: 'cover',
     zIndex: 2

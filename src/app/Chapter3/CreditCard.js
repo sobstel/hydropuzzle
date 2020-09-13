@@ -3,6 +3,7 @@ import { Platform, View } from 'react-native';
 import PropTypes from 'prop-types';
 import ReactTimeout from 'react-timeout';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { rwidth } from '@lib/rsize';
 import { _ } from '@app/script';
 
 import HText from '@components/HText';
@@ -99,7 +100,7 @@ export default ReactTimeout(CreditCard);
 
 const styles = EStyleSheet.create({
   container: {
-    width: '100%',
+    width: rwidth(100),
     backgroundColor: '#fffd',
     paddingVertical: '1rem'
   },

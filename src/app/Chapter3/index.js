@@ -6,6 +6,7 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 import * as StoreReview from 'react-native-store-review';
 import { rwidth } from '@lib/rsize';
 import { loadGame, saveGame } from '@lib/storage';
+import { rwidth } from '@lib/rsize';
 import { _ } from '@app/script';
 
 import HChapter from '@components/HChapter';
@@ -178,11 +179,11 @@ const styles = EStyleSheet.create({
     flexDirection: 'row'
   },
   selfReminderContainer: {
-    width: '100%',
+    width: rwidth(100),
     backgroundColor: '#fff9'
   },
   driverFinder: {
-    width: '100%',
+    width: rwidth(100),
     backgroundColor: '#fff9',
     marginTop: '2rem',
     paddingVertical: '2rem',

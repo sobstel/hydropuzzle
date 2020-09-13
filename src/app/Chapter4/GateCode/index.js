@@ -3,6 +3,7 @@ import { View } from 'react-native';
 import PropTypes from 'prop-types';
 import * as Animatable from 'react-native-animatable';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { rwidth } from '@lib/rsize';
 import { _ } from '@app/script';
 
 import HText from '@components/HText';
@@ -111,7 +112,7 @@ export default GateCode;
 
 const styles = EStyleSheet.create({
   container: {
-    width: '100%',
+    width: rwidth(100),
     backgroundColor: '#fff9',
     paddingVertical: '2rem'
   },

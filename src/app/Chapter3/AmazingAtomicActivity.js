@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { View } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { rwidth } from '@lib/rsize';
 import { _ } from '@app/script';
 
 import HInstaPost from '@components/HInstaPost';
@@ -30,7 +31,7 @@ export default AmazingAtomicActvity;
 
 const styles = EStyleSheet.create({
   container: {
-    width: '100%',
+    width: rwidth(100),
     backgroundColor: '#fff9'
   }
 });
