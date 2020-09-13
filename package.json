@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "color": "^1.0.3",
+    "expo": "^38.0.10",
+    "expo-keep-awake": "~8.2.1",
     "install": "^0.10.1",
     "js-yaml": "^3.10.0",
     "lodash.memoize": "^4.1.2",
@@ -25,6 +27,7 @@
     "react-native-progress": "^4.1.2",
     "react-native-store-review": "^0.1.5",
     "react-native-typewriter": "^0.7.0",
+    "react-native-unimodules": "^0.10.1",
     "react-native-video": "^5.0.0",
     "react-timeout": "^1.2.0",
     "shuffle-array": "^1.0.1"

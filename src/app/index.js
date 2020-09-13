@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-// import KeepAwake from 'react-native-keep-awake';
+import { activateKeepAwake, deactivateKeepAwake } from 'expo-keep-awake';
 import { loadGame, saveGame } from '@lib/storage';
 
 import HContainer from '@components/HContainer';
@@ -25,6 +25,8 @@ class App extends PureComponent {
   }
 
   componentDidMount = async () => {
+    activateKeepAwake();
+
     const currentLevel = await loadGame('currentLevel');
     const activeLevel = await loadGame('activeLevel');
     if (currentLevel !== null && activeLevel !== null) {
@@ -33,14 +35,16 @@ class App extends PureComponent {
     }
   }
 
+  componentWillUnmount() {
+    deactivateKeepAwake();
+  }
+
   render () {
     return (
       <HContainer debug={config['DEBUG']}>
         <ShareModal />
 
         {this.renderChapter()}
-
-        {/* <KeepAwake /> */}
       </HContainer>
     );
   }
