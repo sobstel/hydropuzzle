@@ -6,7 +6,6 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 import * as StoreReview from 'react-native-store-review';
 import { rwidth } from '@lib/rsize';
 import { loadGame, saveGame } from '@lib/storage';
-import { rwidth } from '@lib/rsize';
 import { _ } from '@app/script';
 
 import HChapter from '@components/HChapter';
