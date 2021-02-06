@@ -255,7 +255,7 @@ PODS:
     - DoubleConversion
     - Folly (= 2020.01.13.00)
     - glog
-    - React-jsi/Default (= 0.63.2)
+  - React-jsi/Default (= 0.63.2)
   - React-jsi/Default (0.63.2):
     - boost-for-react-native (= 1.63.0)
     - DoubleConversion
