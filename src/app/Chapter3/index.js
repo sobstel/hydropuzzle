@@ -3,7 +3,6 @@ import { View } from 'react-native';
 import PropTypes from 'prop-types';
 import ReactTimeout from 'react-timeout';
 import EStyleSheet from 'react-native-extended-stylesheet';
-import * as StoreReview from 'react-native-store-review';
 import { rwidth } from '@lib/rsize';
 import { loadGame, saveGame } from '@lib/storage';
 import { _ } from '@app/script';
@@ -160,12 +159,7 @@ class Chapter3 extends PureComponent {
   onCreditCardError = () => {};
   onCreditCardSuccess = () => this.setState({creditCard: true, selfReminder: false, driverFinder: true, scrollable: false});
   onDriverFinderEnd = () => this.setState({chapterTrigger: true, scrollable: true});
-  onEnd = () => {
-    if (!this.props.completed && StoreReview.isAvailable) {
-      StoreReview.requestReview();
-    }
-    this.props.onEnd();
-  }
+  onEnd = () => this.props.onEnd();
 }
 
 export default ReactTimeout(Chapter3);

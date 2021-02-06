@@ -283,7 +283,6 @@
 				DEVELOPMENT_TEAM = L2LWRR83T5;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-store-review/ios",
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
 				);
 				INFOPLIST_FILE = hydropuzzle/Info.plist;
@@ -316,7 +315,6 @@
 				DEVELOPMENT_TEAM = L2LWRR83T5;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-store-review/ios",
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
 				);
 				INFOPLIST_FILE = hydropuzzle/Info.plist;
