@@ -29,6 +29,8 @@ class GateCode extends Component {
     sequence: puzzle.initialSequence
   }
 
+  variantSequence = puzzle.variantSequence();
+
   componentDidMount () {
     if (this.props.completed) {
       this.setState({sequence: puzzle.validSequence});
@@ -82,7 +84,7 @@ class GateCode extends Component {
     const {x, y} = this.state.active;
     const sequence = this.state.sequence;
 
-    sequence[y][x] = (sequence[y][x] < 5 ? sequence[y][x] + 1 : 0);
+    sequence[y][x] = (sequence[y][x] < this.variantSequence.length - 1 ? sequence[y][x] + 1 : 0);
     this.setState({sequence});
 
     if (puzzle.validateSequence(sequence)) {

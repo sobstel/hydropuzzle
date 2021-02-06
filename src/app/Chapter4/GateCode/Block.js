@@ -17,6 +17,7 @@ class Block extends PureComponent {
     active: false
   }
 
+  variantSequence = puzzle.variantSequence();
   variantPatterns = puzzle.variantPatterns();
 
   TOP_LEFT_INDEX = 0
@@ -25,7 +26,7 @@ class Block extends PureComponent {
   BOTTOM_LEFT_INDEX = 3
 
   render () {
-    const variantPattern = this.variantPatterns[this.props.variant];
+    const variantPattern = this.variantPatterns[this.variantSequence[this.props.variant]];
     let patternStyles = [];
 
     for (let i = 0, len = variantPattern.length; i < len; i += 1) {

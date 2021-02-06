@@ -2,14 +2,19 @@ import shuffle from 'shuffle-array';
 import config from '@src/config';
 import chapter4Images from '@images/chapter4';
 
+
+export function variantSequence () {
+  return [1, 4, 2, 5, 3, 4, 0, 5]
+}
+
 export function variantPatterns () {
   return [
-    [[0, 1, 1, 0], [0, 0, 0, 1], [0, 0, 0, 0], [1, 0, 0, 0]],
-    [[0, 1, 0, 0], [0, 0, 1, 1], [1, 0, 0, 0], [0, 0, 0, 0]],
-    [[0, 0, 0, 0], [0, 0, 1, 0], [1, 0, 0, 1], [0, 1, 0, 0]],
-    [[0, 0, 1, 0], [0, 0, 0, 0], [0, 0, 0, 1], [1, 1, 0, 0]],
-    [[0, 1, 0, 0], [0, 0, 0, 1], [0, 0, 0, 1], [0, 1, 0, 0]],
-    [[0, 0, 1, 0], [0, 0, 1, 0], [1, 0, 0, 0], [1, 0, 0, 0]]
+    [[0, 1, 1, 0], [0, 0, 0, 1], [0, 0, 0, 0], [1, 0, 0, 0]], // 0 top-left
+    [[0, 1, 0, 0], [0, 0, 1, 1], [1, 0, 0, 0], [0, 0, 0, 0]], // 1 top-right
+    [[0, 0, 0, 0], [0, 0, 1, 0], [1, 0, 0, 1], [0, 1, 0, 0]], // 2 bottom-right
+    [[0, 0, 1, 0], [0, 0, 0, 0], [0, 0, 0, 1], [1, 1, 0, 0]], // 3 bottom-left
+    [[0, 1, 0, 0], [0, 0, 0, 1], [0, 0, 0, 1], [0, 1, 0, 0]], // 4 straight-vertical
+    [[0, 0, 1, 0], [0, 0, 1, 0], [1, 0, 0, 0], [1, 0, 0, 0]], // 5 straight-horizontal
   ];
 }
 
@@ -42,9 +47,11 @@ export function validateSequence (sequence) {
     return true;
   }
 
+  const variantSeq = variantSequence();
+
   return validSequence.every((row, y) => {
     return row.every((validValue, x) => {
-      return validValue === sequence[y][x];
+      return validValue === variantSeq[sequence[y][x]];
     });
   });
 }
