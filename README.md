@@ -26,6 +26,10 @@ Download on
 - `yarn test`
 - `yarn optimize-images`
 
+## Updates
+
+- `npx pod-install`
+
 ## Resources
 
 - [Font Awesome Cheatsheet](http://fontawesome.io/cheatsheet/)
