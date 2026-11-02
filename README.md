@@ -2,7 +2,7 @@
 
 > Built with React Native
 
-No longer available from the App Store or Google Play.
+_No longer available from the App Store or Google Play._
 
 ## Preview
 
