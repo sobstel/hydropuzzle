@@ -2,10 +2,7 @@
 
 > Built with React Native
 
-Download on
-[the App Store](https://itunes.apple.com/app/id1294812505?mt=8) or
-[the Google Play](https://play.google.com/store/apps/details?id=org.sobstel.hydropuzzle).
-
+No longer available from the App Store or Google Play.
 
 ## Preview
 
